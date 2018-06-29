@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  automl:
+    # container_name: course-xgboost
+    container_name: automated-data-science
+    build: ./dds
+    working_dir: /notebooks
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/opt/app/data
