@@ -37,10 +37,46 @@ ENV LANG=C.UTF-8
 #     make -j4 && \
 #     cd python-package; python3 setup.py install
 
-# Install Python Packages & Requirements (Done near end to avoid invalidating cache)
-COPY requirements.txt requirements.txt
 RUN pip install --upgrade setuptools
-RUN pip install -r requirements.txt
+# Install Python Packages & Requirements (Done near end to avoid invalidating cache)
+# COPY requirements.txt requirements.txt
+# RUN pip install -r requirements.txt
+
+# Basic Data Science and machine learning packages
+RUN pip install cython && \
+    pip install numpy && \
+    pip install pandas && \
+    pip install matplotlib && \
+    pip install scipy && \
+    pip install plotly && \
+    pip install folium && \
+    pip install seaborn && \
+    pip install graphviz && \
+    pip install scikit-learn
+
+# Automated Feature Engineering
+RUN pip install tsfresh && \
+    pip install featuretools
+
+# AutoML
+RUN pip install deap && \
+    pip install update_checker && \
+    pip install tqdm && \
+    pip install stopit && \
+    pip install tpot
+
+# Model Interpretation
+RUN pip install lime
+
+# Server
+RUN pip install Flask && \
+    pip install Flask_RESTful && \
+    pip install requests && \
+    pip install gunicorn && \
+    pip install dash && \
+    pip install dash-renderer && \
+    pip install dash-html-components && \
+    pip install dash-core-components
 
 # Expose Jupyter port & cmd
 EXPOSE 8888
