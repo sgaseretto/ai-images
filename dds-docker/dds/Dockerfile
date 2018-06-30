@@ -32,10 +32,10 @@ RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/
 ENV LANG=C.UTF-8
 
 # Install XGBoost library
-RUN git clone --recursive https://github.com/dmlc/xgboost && \
-    cd xgboost && \
-    make -j4 && \
-    cd python-package; python3 setup.py install
+# RUN git clone --recursive https://github.com/dmlc/xgboost && \
+#     cd xgboost && \
+#     make -j4 && \
+#     cd python-package; python3 setup.py install
 
 # Install Python Packages & Requirements (Done near end to avoid invalidating cache)
 COPY requirements.txt requirements.txt
