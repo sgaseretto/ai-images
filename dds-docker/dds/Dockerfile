@@ -1,7 +1,7 @@
 FROM python:3
 
 # Install required packages
-RUN apt-get install --virtual=.build-dependencies nodejs ca-certificates musl-dev gcc python-dev make cmake g++ gfortran libpng-dev freetype-dev libxml2-dev libxslt-dev
+RUN apt-get install nodejs ca-certificates musl-dev gcc python-dev make cmake g++ gfortran libpng-dev freetype-dev libxml2-dev libxslt-dev
 RUN apt-get install git
 
 # Install Jupyter
