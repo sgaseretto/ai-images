@@ -1,8 +1,8 @@
 FROM python:3
 
 # Install required packages
-RUN apk add --update --virtual=.build-dependencies nodejs ca-certificates musl-dev gcc python-dev make cmake g++ gfortran libpng-dev freetype-dev libxml2-dev libxslt-dev
-RUN apk add --update git
+RUN apt-get add --update --virtual=.build-dependencies nodejs ca-certificates musl-dev gcc python-dev make cmake g++ gfortran libpng-dev freetype-dev libxml2-dev libxslt-dev
+RUN apt-get add --update git
 
 # Install Jupyter
 RUN pip install jupyter
