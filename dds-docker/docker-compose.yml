@@ -5,8 +5,9 @@ services:
     # container_name: course-xgboost
     container_name: automated-data-science
     build: ./dds
-    working_dir: /notebooks
+    working_dir: /project
     ports:
       - "8888:8888"
     volumes:
       - ./data:/opt/app/data
+      - ./project:/project
