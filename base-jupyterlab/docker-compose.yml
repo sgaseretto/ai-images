@@ -1,12 +1,12 @@
 version: '2'
 
 services:
-  automl:
+  jupyterlab:
     # container_name: course-xgboost
-    container_name: automated-data-science
-    build: ./dds
+    container_name: jupyterlab_container
+    build: ./jupyterlab
     working_dir: /notebooks
     ports:
       - "8888:8888"
     volumes:
-      - ./data:/jup
+      - ./notebooks:/notebooks

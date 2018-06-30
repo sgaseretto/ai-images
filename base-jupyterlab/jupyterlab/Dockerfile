@@ -1,6 +1,6 @@
 FROM python:3
 
-WORKDIR /jup
+# WORKDIR /jup
 
 RUN pip install jupyter -U && pip install jupyterlab
 
