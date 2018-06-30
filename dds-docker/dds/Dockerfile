@@ -1,8 +1,8 @@
-FROM python:3
+FROM python:alpine
 
 # Install required packages
-RUN apt-get install nodejs ca-certificates musl-dev gcc python-dev make cmake g++ gfortran libpng-dev freetype-dev libxml2-dev libxslt-dev
-RUN apt-get install git
+RUN apk add --update --virtual=.build-dependencies alpine-sdk nodejs ca-certificates musl-dev gcc python-dev make cmake g++ gfortran libpng-dev freetype-dev libxml2-dev libxslt-dev
+RUN apk add --update git
 
 # Install Jupyter
 RUN pip install jupyter
