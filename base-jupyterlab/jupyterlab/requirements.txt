@@ -1,0 +1,32 @@
+cython
+numpy
+pandas
+matplotlib
+scipy
+plotly
+folium
+lxml
+nltk
+seaborn
+graphviz
+scikit-learn
+# Server
+Flask
+Flask_RESTful
+requests
+gunicorn
+# dash
+# dash-renderer
+# dash-html-components
+# dash-core-components
+# Automated Feature Engineering
+tsfresh
+featuretools
+# AutoML
+deap
+update_checker
+tqdm
+stopit
+tpot
+# Model Interpretation
+lime
