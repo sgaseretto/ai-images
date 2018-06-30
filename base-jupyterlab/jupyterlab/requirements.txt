@@ -15,10 +15,10 @@ Flask
 Flask_RESTful
 requests
 gunicorn
-# dash
-# dash-renderer
-# dash-html-components
-# dash-core-components
+dash
+dash-renderer
+dash-html-components
+dash-core-components
 # Automated Feature Engineering
 tsfresh
 featuretools
