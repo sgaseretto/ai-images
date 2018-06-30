@@ -2,7 +2,8 @@ cython
 numpy
 pandas
 matplotlib
-#netCDF4
+scipy
+plotly
 folium
 lxml
 nltk
@@ -14,15 +15,14 @@ Flask
 Flask_RESTful
 requests
 gunicorn
-dash
-dash-renderer
-dash-html-components
-dash-core-components
+# dash
+# dash-renderer
+# dash-html-components
+# dash-core-components
 # Automated Feature Engineering
 tsfresh
 featuretools
 # AutoML
-scipy
 deap
 update_checker
 tqdm
