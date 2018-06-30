@@ -35,7 +35,7 @@ ENV LANG=C.UTF-8
 RUN git clone --recursive https://github.com/dmlc/xgboost && \
     cd xgboost && \
     make -j4 && \
-    cd python-package; python setup.py install
+    cd python-package; python3 setup.py install
 
 # Install Python Packages & Requirements (Done near end to avoid invalidating cache)
 COPY requirements.txt requirements.txt
